@@ -6,7 +6,7 @@ import HomeScreen from './HomeScreen';
 import JournalScreen from './JournalScreen';
 import NotesScreen from './NotesScreen';
 import RemindersScreen from './RemindersScreen';
-import ShoppingListScreen from './ShoppingListScreen';
+import TodoScreen from './TodoScreen';
 
 const Drawer = createDrawerNavigator();
 
@@ -22,14 +22,14 @@ const drawerOptions = {
   inactiveBackgroundColor: '#e1e7cf'
 };
 
-const ShoppingListNavigator = () => {
+const TodoNavigator = () => {
   const Stack = createStackNavigator();
   return (
     <Stack.Navigator screenOptions={screenOptions}>
       <Stack.Screen
-        name='ShoppingList'
-        component={ShoppingListScreen}
-        options={{ title: 'Shopping List' }}
+        name='Todos'
+        component={TodoScreen}
+        options={{ title: 'To Dos' }}
       />
     </Stack.Navigator>
   );
@@ -121,9 +121,9 @@ const Main = () => {
           options={{ title: 'Reminders' }}
         />
         <Drawer.Screen
-          name='ShoppingList'
-          component={ShoppingListNavigator}
-          options={{ title: 'Shopping List' }}
+          name='Todos'
+          component={TodoNavigator}
+          options={{ title: 'To dos' }}
         />
       </Drawer.Navigator>
     </View>
