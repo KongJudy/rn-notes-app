@@ -1,10 +1,10 @@
 import { StyleSheet, Text, View } from 'react-native';
-const ReminderScreen = () => {
+const RemindersScreen = () => {
   return (
     <View>
       <Text>ReminderScreen</Text>
     </View>
   );
 };
-export default ReminderScreen;
+export default RemindersScreen;
 const styles = StyleSheet.create({});

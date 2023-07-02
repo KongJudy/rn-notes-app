@@ -25,7 +25,7 @@ const HomeScreen = ({ navigation }) => {
         style={styles.link}
         onPress={() => navigation.navigate('ShoppingList')}
       >
-        <Text style={styles.linkText}>ShoppingList</Text>
+        <Text style={styles.linkText}>Shopping List</Text>
       </TouchableOpacity>
     </View>
   );
